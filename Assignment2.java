@@ -13,6 +13,10 @@ public class Assignment2 {
         // User gives initial input
         String sentence = JOptionPane.showInputDialog("Enter a sentence: ");
         String letter = JOptionPane.showInputDialog("Enter a letter: ");
+        
+        if (sentence.indexOf(letter) < 0)
+            JOptionPane.showMessageDialog(null, "Enter a sentence and only enter ONE letter");
+        else
 
         // Counts the number of instances of the letter given in the sentence given
         try{
